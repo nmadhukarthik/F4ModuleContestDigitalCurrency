@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div id="search-container">
+        <input type="text" name="search" id="searchInput" placeholder="Search By Name or Symbol" oninput="filterTable()"/>
+        <button id="percentage" onclick="sortByPercentage()">Sort by Percentage</button>
+        <button id="mktCap" onclick="sortByMktCap()">Sort by Mkt Cap</button>
+    </div>
+    
+    <div id="display-container">
+        <table>
+            <thead></thead>
+            <!-- <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>ID</th>              
+                    <th>Symbol</th>
+                    <th>Current Price</th>
+                    <th>Total Volume</th>
+                    <th>&percnt; Percentage change</th>
+                    <th>Market Cap</th>
+                </tr>
+            </thead> -->
+
+            <tbody id="display"></tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
